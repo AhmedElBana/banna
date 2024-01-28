@@ -274,5 +274,12 @@
     <script src="../assets/js/common.js"></script>
 
     <script src="../assets/demo/plugins-demo.js"></script>
-
+	<script type='text/javascript'>
+		window.smartlook||(function(d) {
+		  var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+		  var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+		  c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+		  })(document);
+		  smartlook('init', 'c00fd636376cf1683afd37878fae2f4893e92b52', { region: 'eu' });
+	</script>
 </body></html>
