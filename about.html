@@ -22,6 +22,15 @@
     <link rel="stylesheet" type="text/css" href="../assets/styles/style-dark.css">
 	<link rel="stylesheet" type="text/css" href="../assets/demo/style-demo.css">
 	
+	<script type='text/javascript'>
+		window.smartlook||(function(d) {
+		  var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+		  var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+		  c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+		  })(document);
+		  smartlook('init', 'c00fd636376cf1683afd37878fae2f4893e92b52', { region: 'eu' });
+	</script>
+	
 <style type="text/css">.medium-zoom-overlay{position:fixed;top:0;right:0;bottom:0;left:0;opacity:0;transition:opacity .3s;will-change:opacity}.medium-zoom--opened .medium-zoom-overlay{cursor:pointer;cursor:zoom-out;opacity:1}.medium-zoom-image{cursor:pointer;cursor:zoom-in;transition:transform .3s cubic-bezier(.2,0,.2,1)}.medium-zoom-image--hidden{visibility:hidden}.medium-zoom-image--opened{position:relative;cursor:pointer;cursor:zoom-out;will-change:transform}</style></head>
 <body class="bg-triangles" cz-shortcut-listen="true" style="opacity: 1;">
     <!-- Preloader -->
@@ -176,12 +185,4 @@
     <script src="../assets/js/common.js"></script>
     
 	<script src="../assets/demo/plugins-demo.js"></script>
-	<script type='text/javascript'>
-		window.smartlook||(function(d) {
-		  var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-		  var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-		  c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-		  })(document);
-		  smartlook('init', 'c00fd636376cf1683afd37878fae2f4893e92b52', { region: 'eu' });
-	</script>
 </body></html>
