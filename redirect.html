@@ -1,0 +1,32 @@
+<html lang="en" class="no-touch"><head>
+    <meta charset="utf-8">
+    <title>Banna</title>
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="author" content="Banna">
+    <meta name="description" content="banna profile">
+
+    <body class="bg-triangles" cz-shortcut-listen="true" style="opacity: 1;">
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const type = urlParams.get('type')
+            switch(type) {
+                case "inhome":
+                    window.location.href = "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=12097e65-3e40-40ae-b1c1-f56db83379f8&token=4596fe65-826d-4df6-8ba1-4dc58657d7d4&response=html";
+                    break;
+                case "away":
+                    window.location.href = "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=80fd88ce-c093-4b73-a20f-cb3596b6a175&token=ea1b60e5-4772-4e00-bffd-1d8a8a2ca661&response=html";
+                    break;
+                case "night":
+                    window.location.href = "https://www.virtualsmarthome.xyz/url_routine_trigger/activate.php?trigger=00744265-ac53-48a5-bfb2-d4f2c3834d74&token=5d1f3c59-3ec7-4a6c-80a4-ce1ea158de53&response=html";
+                    break;
+                default:
+                    // do nothing
+            }
+        </script>
+    </body>
+</html>
